@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text" id="input1"/>
+        <input type="password" id="input2"/>
+        <button type="submit">Send</button>
+     </form>
+     <script>
+        let login = $('#input1')
+        let password = $('#input2')
+        let button = $('button')
+
+        button.click(e => {
+            e.preventDefault()
+            if (!login.val().trim() || !password.val().trim()) {
+                alert('Please fill in all fields')
+            } else {
+                alert('You are logged in')
+                $(form)
+            }
+        })
+     </script>
+</body>
+</html>

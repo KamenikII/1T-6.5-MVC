@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="some"></div>
+    <div class="box" id="box">*Magik*</div>
+
+    <script>
+        $('#box').on('mouseenter', () => {
+            $('.some').css({
+                transform: 'rotate(90deg)',
+                transition: '1s'
+            }, 500);
+        })
+        $('#box').on('mouseleave', () => {
+            $('.some').css({
+                transform: 'rotate(0deg)',
+                transition: '0.25s'
+            }, 500);
+        })
+    </script>
+</body>
+</html>
